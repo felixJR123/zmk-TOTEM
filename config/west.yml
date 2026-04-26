@@ -1,0 +1,22 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: carrefinho                           
+      url-base: https://github.com/carrefinho   
+    - name: felixJR123
+      url-base: https://github.com/felixJR123
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+    - name: prospector-zmk-module               
+      remote: carrefinho                         
+      revision: feat/new-status-screens          
+    - name: snake-dongle-modified
+      remote: felixJR123                    
+      revision: zephyr-4.1                                                 
+  self:
+    path: config
+    

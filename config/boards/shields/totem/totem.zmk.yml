@@ -1,0 +1,15 @@
+file_format: "1"
+id: totem
+name: TOTEM
+type: shield
+url: https://github.com/GEIGEIGEIST/TOTEM
+requires: [xiao_ble]
+features:
+  - keys
+siblings:
+  - totem_peripheral_left
+  - totem_peripheral_right
+  - totem_central_prospector
+  - totem_central_left
+  - totem_central_snake
+  - totem_central_dongle
