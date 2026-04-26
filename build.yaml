@@ -23,9 +23,9 @@ include:
   #   artifact-name: home_totem_snake_dongle
   #   #cmake-args: -DCONFIG_ZMK_STUDIO=y
   #   #snippet: studio-rpc-usb-uart
-  # - board: xiao_ble//zmk
-  #   shield: totem_central_prospector prospector_adapter
-  #   artifact-name: home_totem_prospector_dongle
+  - board: xiao_ble//zmk
+    shield: totem_central_prospector prospector_adapter
+    artifact-name: home_totem_prospector_dongle
   # #   #cmake-args: -DCONFIG_ZMK_STUDIO=y
   # #   #snippet: studio-rpc-usb-uart
   # reset
