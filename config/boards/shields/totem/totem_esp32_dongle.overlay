@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 #include "totem.dtsi"
+#include <dt-bindings/zmk/keys.h>
 
 / {
     chosen {
@@ -16,5 +17,56 @@
         columns = <0>;
         rows = <0>;
         events = <0>;
+    };
+};
+ 
+/ {
+    esp32_deck {
+        compatible = "zmk,esp32-deck";
+
+        tile_1 {
+            label = "Mute";
+            bindings = <&kp C_MUTE>;
+        };
+
+        tile_2 {
+            label = "Layer";
+            bindings = <&kp C_MUTE>;
+        };
+
+        tile_3 {
+            label = "Build";
+            bindings = <&kp C_MUTE>;
+        };
+
+        tile_4 {
+            label = "Terminal";
+            bindings = <&kp C_MUTE>;
+        };
+
+        tile_5 {
+            label = "Weather";
+            bindings = <&kp C_MUTE>;
+        };
+
+        tile_6 {
+            label = "Blank";
+            bindings = <&kp C_MUTE>;
+        };
+
+        tile_7 {
+            label = "Desktop";
+            bindings = <&kp C_MUTE>;
+        };
+
+        tile_8 {
+            label = "Media";
+            bindings = <&kp C_MUTE>;
+        };
+
+        tile_9 {
+            label = "Settings";
+            bindings = <&kp C_MUTE>;
+        };
     };
 };
