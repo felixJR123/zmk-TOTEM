@@ -5,6 +5,9 @@ include:
   - board: nice_nano//zmk
     shield: totem_central_dongle dongle_display
     artifact-name: home_totem_central_dongle
+  - board: nice_nano//zmk
+    shield: totem_central_dongle esp32_status_dongle
+    artifact-name: home_totem_esp32_dongle
   #   #cmake-args: -DCONFIG_ZMK_STUDIO=y
   #   #snippet: studio-rpc-usb-uart
   - board: xiao_ble//zmk

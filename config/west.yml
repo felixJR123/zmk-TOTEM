@@ -15,8 +15,11 @@ manifest:
       remote: carrefinho                         
       revision: feat/new-status-screens          
     - name: snake-dongle-modified
-      remote: felixJR123                    
-      revision: zephyr-4.1                                                 
+      remote: felixJR123
+      revision: zephyr-4.1
+    - name: zmk-esp32-dongle
+      remote: felixJR123
+      revision: main
   self:
     path: config
     
