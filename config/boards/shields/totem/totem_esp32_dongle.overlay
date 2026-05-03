@@ -46,6 +46,45 @@
     };
 };
 
+/*
+ * Sub-tile bindings for deck tiles marked as "menu tiles" on the ESP32.
+ * Add a menu_tile_N node for each parent tile that will be a menu tile,
+ * then add subtile_1..subtile_9 children with their bindings and labels.
+ * Only tiles configured as menu tiles in the ESP32 settings need entries here.
+ */
+/ {
+    esp32_deck_menu_tiles {
+        compatible = "zmk,esp32-deck-menu-tiles";
+
+        menu_tile_8 {
+            subtile_1 {
+                label = "Play";
+                bindings = <&kp C_PLAY_PAUSE>;
+            };
+            subtile_2 {
+                label = "Prev";
+                bindings = <&kp C_PREV>;
+            };
+            subtile_3 {
+                label = "Next";
+                bindings = <&kp C_NEXT>;
+            };
+            subtile_4 {
+                label = "Vol-";
+                bindings = <&kp C_VOL_DN>;
+            };
+            subtile_5 {
+                label = "Mute";
+                bindings = <&kp C_MUTE>;
+            };
+            subtile_6 {
+                label = "Vol+";
+                bindings = <&kp C_VOL_UP>;
+            };
+        };
+    };
+};
+
 / {
     esp32_deck {
         compatible = "zmk,esp32-deck";
