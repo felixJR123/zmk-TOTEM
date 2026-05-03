@@ -22,6 +22,32 @@
 };
  
 / {
+    bt_profile_names {
+        compatible = "zmk,bt-profile-names";
+
+        profile_1 {
+            label = "BT 1";
+        };
+
+        profile_2 {
+            label = "BT 2";
+        };
+
+        profile_3 {
+            label = "BT 3";
+        };
+
+        profile_4 {
+            label = "BT 4";
+        };
+
+        profile_5 {
+            label = "BT 5";
+        };
+    };
+};
+
+/ {
     esp32_deck {
         compatible = "zmk,esp32-deck";
 
