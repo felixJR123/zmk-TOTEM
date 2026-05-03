@@ -21,28 +21,27 @@
     };
 };
  
+/*
+ * BT profile names for host connections shown on the ESP32 screen.
+ * Only define labels for host profiles — peripheral slots are separate
+ * and not counted here. For this keyboard:
+ *   BT_MAX_PAIRED=5, CENTRAL_PERIPHERALS=2 → 3 host profiles.
+ * Adjust if your keyboard has a different number of peripherals.
+ */
 / {
     bt_profile_names {
         compatible = "zmk,bt-profile-names";
 
         profile_1 {
-            label = "BT 1";
+            label = "PC";
         };
 
         profile_2 {
-            label = "BT 2";
+            label = "Phone";
         };
 
         profile_3 {
-            label = "BT 3";
-        };
-
-        profile_4 {
-            label = "BT 4";
-        };
-
-        profile_5 {
-            label = "BT 5";
+            label = "Laptop";
         };
     };
 };
