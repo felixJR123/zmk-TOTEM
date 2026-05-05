@@ -8,20 +8,20 @@ include:
   #- board: nice_nano//zmk
   #  shield: totem_central_dongle esp32_status_dongle
   #  artifact-name: home_totem_esp32_dongle
-  - board: xiao_ble//zmk
+  - board: xiao_ble/nrf52840/zmk
     shield: totem_esp32_dongle esp32_status_dongle
     artifact-name: home_totem_esp32_dongle_xiao
   #   #cmake-args: -DCONFIG_ZMK_STUDIO=y
   #   #snippet: studio-rpc-usb-uart
-  #- board: xiao_ble//zmk
+  #- board: xiao_ble/nrf52840/zmk
   #  shield: totem_central_left
   #  artifact-name: home_totem_central_left
     #cmake-args: -DCONFIG_ZMK_STUDIO=y
     #snippet: studio-rpc-usb-uart
-  - board: xiao_ble//zmk
+  - board: xiao_ble/nrf52840/zmk
     shield: totem_peripheral_left
     artifact-name: home_totem_peripheral_left
-  - board: xiao_ble//zmk
+  - board: xiao_ble/nrf52840/zmk
     shield: totem_peripheral_right
     artifact-name: home_totem_peripheral_right
   # - board: nice_nano//zmk
@@ -29,7 +29,7 @@ include:
   #   artifact-name: home_totem_snake_dongle
   #   #cmake-args: -DCONFIG_ZMK_STUDIO=y
   #   #snippet: studio-rpc-usb-uart
-  #- board: xiao_ble//zmk
+  #- board: xiao_ble/nrf52840/zmk
   #  shield: totem_central_prospector prospector_adapter
   #  artifact-name: home_totem_prospector_dongle
   # #   #cmake-args: -DCONFIG_ZMK_STUDIO=y
@@ -37,5 +37,5 @@ include:
   # reset
   #- board: nice_nano//zmk
   #  shield: settings_reset
-  - board: xiao_ble//zmk
+  - board: xiao_ble/nrf52840/zmk
     shield: settings_reset
